@@ -1,0 +1,67 @@
+fieldset {
+  border: none;
+}
+
+legend {
+  display: flex;
+  gap: .8rem;
+  font: var(--heading-sm);
+  color: var(--text-heading);
+
+  & img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+}
+
+
+
+
+.input-wrapper {
+  margin-top: 1.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+
+  & label {
+    font: var(--body-sm);
+    color: var(--text-body);
+  }
+
+  & input {
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    width: 100%;
+    padding: 1rem;
+    font: var(--body-md) ;
+    color:  var(--input-placeholder);
+    border-radius: .5rem;
+
+  }
+
+
+}
+
+#option {
+  border: 1px solid var(--input-stroke);
+  background-color: var(--input-base);
+  width: 100%;
+  padding: 1rem;
+  font: var(--body-md) ;
+  color:  var(--input-placeholder);
+  border-radius: .5rem;
+
+  display: flex;
+  flex-direction: row;
+
+  & button {
+    width: 50%;
+    
+
+  }
+
+}
+
+
+

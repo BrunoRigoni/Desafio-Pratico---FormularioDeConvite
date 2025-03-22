@@ -5,3 +5,54 @@
   grid-template-columns: 32.79% 67.21%;
 
 }
+
+/*aside css configs*/
+aside {
+  background-image: url(../assets/images/aside/Background.png);
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+
+  padding: 2rem;
+  display: inline-block;
+
+  & img {
+    width: 2.85rem;
+    height: 3rem;
+    max-width: 100%;
+  }
+
+  & header {
+
+    & p {
+      font: var(--body-md);
+      color: var(--text-heading);
+      text-shadow: .05rem .05rem black;
+    }
+
+  }
+
+
+}
+
+/*main css configs*/
+
+main {
+  padding: 5rem 8.125rem ;
+  background-color: var(--bg-shape);
+
+  & legends {
+    color: var(--text-heading);
+  }
+
+  & label {
+    color: var(--text-heading);
+  }
+
+
+}
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
