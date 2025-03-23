@@ -18,6 +18,7 @@ body {
 
   /*shape body bc*/
   --bg-shape: #2D3136;
+  --shape-hover: #383D42;
   --input-base: #131516;
   /*Brand colors*/
   --brand-light: #59B2FF;
