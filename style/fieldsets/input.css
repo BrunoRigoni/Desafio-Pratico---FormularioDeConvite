@@ -1,5 +1,6 @@
 fieldset {
   border: none;
+  margin-bottom: 3rem;
   
   min-width: min-content;
 }
@@ -16,9 +17,6 @@ legend {
   }
 
 }
-
-
-
 
 .input-wrapper {
   display: flex;

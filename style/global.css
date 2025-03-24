@@ -17,10 +17,11 @@ body {
   --pink: #FF598B;
 
   /*shape body bc*/
-  --bg-shape: #2D3136;
+  --bg-shape: #212427;
   --shape-hover: #383D42;
+  --shape-button: #2D3136;
   --input-base: #131516;
-  /*Brand colors*/
+  /*Brand colors*/  
   --brand-light: #59B2FF;
   --brand-mid: #3487CF;
   --brand-dark: #1D6FB6;
@@ -61,10 +62,13 @@ color:var(--pink) ;
 max-width: 21rem;
 }
 
+ 
+
 h1 {
 font: var(--heading-md);
 color: var(--text-heading);
 margin-bottom: 2.5rem;
+
 }
 
 h2 {
