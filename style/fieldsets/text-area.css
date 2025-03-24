@@ -1,0 +1,25 @@
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  gap: .75rem;  
+
+  & label {
+    font: var(--body-sm);
+    color: var(--text-body);
+
+}
+
+  & textarea {
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    min-width: 100%;
+    max-height: 8.5rem ;
+    padding: 1rem;
+    font: var(--body-md);
+    color: var(--input-placeholder);
+    border-radius: .5rem;
+    resize: none;
+  }
+
+}

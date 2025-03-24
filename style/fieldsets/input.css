@@ -1,5 +1,7 @@
 fieldset {
   border: none;
+  
+  min-width: min-content;
 }
 
 legend {
@@ -36,61 +38,20 @@ legend {
     font: var(--body-md);
     color: var(--input-placeholder);
     border-radius: .5rem;
-
+    position: relative;
   }
 
 
 }
-
-.radio-inner {
-  border: 1px solid var(--input-stroke);
-  border-radius: .5rem;
-  display: flex;
-  align-items: center;
-  padding: .25rem;
-  background-color: var(--input-base);
-
-  
-
-  & input[type=radio] {
-    display: none;
-  }
+input[type="datetime-local"]::-webkit-inner-spin-button,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  appearance: none;
+  background: transparent;
+  position: absolute;
+  width: 10%;
+  right: 58%;
 
 
-
-
-  & .radio-btn {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    border-radius: .5rem;
-    gap: .5rem;
-    padding: 0.65rem;
-    width: 50%;
-
-    color: var(--text-body);
-    font: var(--body-sm) ;
-
-  }
-}
-
-.radio-btn:hover,
-.radio-btn:focus-within,
-.radio-btn:has(:checked) {
-
-  background-color: var(--shape-hover);
-
-  & .build-icon path,
-  & .webcam-icon path {
-    fill: var(--brand-light);
-  }
-
-  & input:has(:checked ){
-    background-color: var(--shape-hover);
-      fill: var(--brand-light);
-    
-  
-
-}
 
 }

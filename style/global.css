@@ -58,6 +58,7 @@ body {
 .logo {
 font: var(--logo);
 color:var(--pink) ;
+max-width: 21rem;
 }
 
 h1 {
