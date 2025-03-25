@@ -41,11 +41,6 @@ main {
   background-color: var(--bg-shape);
   overflow: auto;
 
-  & legend {
-    color: var(--text-heading);
-    margin-bottom: 1.5rem;
-  }
-
   & label {
     color: var(--text-heading);
   }
@@ -58,3 +53,16 @@ main {
   gap: 1rem;
   margin-block: 1rem;
 }
+
+.main-field {
+  & legend {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.second-field {
+  & legend {
+    margin-bottom: 1.625rem;
+  }
+}
+

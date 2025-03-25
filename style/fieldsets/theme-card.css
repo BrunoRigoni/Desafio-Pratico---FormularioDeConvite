@@ -1,4 +1,6 @@
 .card-wrapper {
+
+  
   
   display: grid;
   justify-items: center;
@@ -60,3 +62,14 @@
 .theme-card:has(:checked) {
   border: 2px solid var(--brand-light);
 }
+
+legend {
+    color: var(--text-heading);
+    font: var(--body-sm);
+  }
+
+  .theme-wrapper {
+    & legend {
+      margin-bottom: 1rem;
+    }
+  }
