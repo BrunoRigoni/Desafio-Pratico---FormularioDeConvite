@@ -54,15 +54,8 @@ main {
   margin-block: 1rem;
 }
 
-.main-field {
-  & legend {
-    margin-bottom: 1.5rem;
-  }
-}
 
-.second-field {
-  & legend {
-    margin-bottom: 1.625rem;
-  }
-}
+
+
+
 

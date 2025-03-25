@@ -51,7 +51,7 @@ body {
 
   --body-md: 400 1rem var(--open-sans);
   --body-sm: 400 .875rem var(--open-sans);
-  --body-xm: 600 .75rem var(--open-sans);
+  --body-xm: 400 .75rem var(--open-sans);
 
 
 }
@@ -75,5 +75,23 @@ h2 {
   font: var(--heading-sm);
 }
 
+.title {
+  display: flex;
+  flex-direction: row;
+  gap: .9rem;
+  margin-bottom: 1.5rem;
 
+  font: var(--heading-sm);
+  color: var(--text-heading);
+
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.line {
+  width: 100%; 
+  border: 1px solid var(--input-stroke);
+}
 
