@@ -1,7 +1,6 @@
 fieldset {
   border: none;
   margin-bottom: 3rem;
-  
   min-width: min-content;
 }
 
@@ -39,8 +38,16 @@ legend {
     position: relative;
   }
 
+  & input:hover {
+    border: 1px solid var(--brand-light);
+  }
 
+  & input:focus-within {
+    border: 1px solid var(--brand-light);
+    outline: 1px solid var(--brand-light); ;
+  }
 }
+
 input[type="datetime-local"]::-webkit-inner-spin-button,
 input[type="datetime-local"]::-webkit-calendar-picker-indicator {
   opacity: 0;
@@ -49,33 +56,28 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
   position: absolute;
   width: 10%;
   right: 58%;
-
-
-
 }
 
 input {
-  &[required] + .error {
+  &[required]+.error {
     display: flex;
     gap: .4rem;
-    font: var(--body-xm) ;
-    color: var(--danger) ;
+    font: var(--body-xm);
+    color: var(--danger);
 
     & img {
       width: 1rem;
       height: 1rem;
     }
-
   }
 
-  &:not(:focus) + .error {
+  &:not(:focus)+.error {
     display: none;
   }
 
   &:invalid {
     border: 1px solid var(--danger);
   }
-
 }
 
 .contacts-wrapper {
@@ -87,6 +89,5 @@ input {
 
   & .input-wrapper {
     width: 100%;
-    
   }
 }

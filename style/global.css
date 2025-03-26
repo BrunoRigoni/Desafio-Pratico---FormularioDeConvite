@@ -4,12 +4,9 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   overflow: hidden;
 }
-
 
 :root {
   /*Colors*/
@@ -21,7 +18,7 @@ body {
   --shape-hover: #383D42;
   --shape-button: #2D3136;
   --input-base: #131516;
-  /*Brand colors*/  
+  /*Brand colors*/
   --brand-light: #59B2FF;
   --brand-mid: #3487CF;
   --brand-dark: #1D6FB6;
@@ -45,30 +42,24 @@ body {
 
   /*Typography*/
   --logo: 400 2.5rem var(--leckerli-one);
-
   --heading-md: 800 1.75rem var(--baloo-2);
   --heading-sm: 800 1.125rem var(--baloo-2);
-
   --body-md: 400 1rem var(--open-sans);
   --body-sm: 400 .875rem var(--open-sans);
   --body-xm: 400 .75rem var(--open-sans);
 
-
 }
 
 .logo {
-font: var(--logo);
-color:var(--pink) ;
-max-width: 21rem;
+  font: var(--logo);
+  color: var(--pink);
+  max-width: 21rem;
 }
 
- 
-
 h1 {
-font: var(--heading-md);
-color: var(--text-heading);
-margin-bottom: 2.5rem;
-
+  font: var(--heading-md);
+  color: var(--text-heading);
+  margin-bottom: 2.5rem;
 }
 
 h2 {
@@ -80,18 +71,16 @@ h2 {
   flex-direction: row;
   gap: .9rem;
   margin-bottom: 1.5rem;
-
   font: var(--heading-sm);
   color: var(--text-heading);
-
-  img {
+  
+  & img {
     width: 1.5rem;
     height: 1.5rem;
   }
 }
 
 .line {
-  width: 100%; 
+  width: 100%;
   border: 1px solid var(--input-stroke);
 }
-

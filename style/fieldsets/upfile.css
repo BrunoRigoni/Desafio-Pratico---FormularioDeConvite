@@ -8,13 +8,13 @@ input::file-selector-button {
   bottom: 0;
   opacity: 0;
   position: absolute;
-  }
+}
 
 #up-header {
   position: relative;
   border: none;
   font: var(--body-md);
-  color: var(--input-placeholder) ;
+  color: var(--input-placeholder);
   background-color: var(--bg-shape);
   width: 100%;
   height: 100%;
@@ -26,7 +26,6 @@ input::file-selector-button {
   display: flex;
   flex-direction: row;
   gap: .75rem;
-  
   align-items: center;
   text-align: center;
 
@@ -42,13 +41,11 @@ input::file-selector-button {
     font: var(--body-md);
     border-radius: .5rem;
 
-
     & img {
       width: 1rem;
-      height: 1rem;   
-      
+      height: 1rem;
+    }
   }
-}
 }
 
 .up-btn:hover,
@@ -58,15 +55,12 @@ input::file-selector-button {
   color: var(--text-heading);
 }
 
-.togglemode-file-wrapper{
-  margin-top:  1.75rem;
+.togglemode-file-wrapper {
+  margin-top: 1.75rem;
   display: grid;
   grid-template-columns: 11rem 23rem;
   justify-content: space-a;
   gap: 1rem;
-
-
-  
 }
 
 legend {

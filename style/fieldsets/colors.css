@@ -2,40 +2,27 @@
   & legend {
     color: var(--text-body);
     font: var(--body-sm);
-
   }
 }
 
 .color-inner {
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: auto;
   margin-block: 1rem 1.75rem;
 
-
-
-
-
-
-  
-
   & input[type=radio] {
     display: none;
   }
 
-
-
-
   & .color-btn {
 
     width: 2.5rem;
-    height: 2.5rem  ;  
+    height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-
 
     background-color: var(--shape-button);
     width: 2.5rem;
@@ -46,8 +33,6 @@
     justify-items: center;
     align-items: center;
     border-radius: 50%;
-    
-
 
     & .selector {
       width: 1.75rem;
@@ -55,9 +40,7 @@
       align-items: center;
       justify-content: center;
       border-radius: 50%;
-
     }
-
   }
 }
 
@@ -66,20 +49,17 @@
 .color-btn:has(:checked) {
   background-color: var(--shape-hover);
   border: 2px solid var(--brand-light);
-
-  }
-
-  & label + input:has(:checked ){
-    background-color: var(--shape-hover);
-    border: 2px solid var(--brand-light);
-
 }
 
-
+& label+input:has(:checked) {
+  background-color: var(--shape-hover);
+  border: 2px solid var(--brand-light);
+}
 
 .blue {
   background-color: #59B2FF;
 }
+
 .purple-dark {
   background-color: #6A59FF;
 }

@@ -8,7 +8,7 @@
     font: var(--body-sm);
     color: var(--text-body);
 
-}
+  }
 }
 
 .radio-inner {
@@ -20,8 +20,6 @@
   padding: .25rem;
   background-color: var(--input-base);
   justify-content: baseline;
-
-  
 
   & input[type=radio] {
     display: none;
@@ -35,13 +33,15 @@
     justify-items: center;
     align-items: center;
     border-radius: .5rem;
+
     gap: .5rem;
     padding: .82rem;
+
     width: 100%;
     height: 100%;
 
     color: var(--text-body);
-    font: var(--body-sm) ;
+    font: var(--body-sm);
 
   }
 }
@@ -49,7 +49,6 @@
 .radio-btn:hover,
 .radio-btn:focus-within,
 .radio-btn:has(:checked) {
-
   background-color: var(--shape-hover);
 
   & .build-icon path,
@@ -57,16 +56,13 @@
     fill: var(--brand-light);
   }
 
-  & label + input:has(:checked ){
+  & label+input:has(:checked) {
     background-color: var(--shape-hover);
+    fill: var(--brand-light);
+
+    & .build-icon path,
+    & .webcam-icon path {
       fill: var(--brand-light);
-      & .build-icon path,
-      & .webcam-icon path {
-        fill: var(--brand-light);
-      }
-    
-  
-
-}
-
+    }
+  }
 }

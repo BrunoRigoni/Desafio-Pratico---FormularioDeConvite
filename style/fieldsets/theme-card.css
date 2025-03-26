@@ -1,7 +1,4 @@
 .card-wrapper {
-
-  
-  
   display: grid;
   justify-items: center;
   justify-content: space-around;
@@ -20,10 +17,9 @@
     text-align: center;
 
     position: relative;
-
     & .theme-name {
       text-align: center;
-      padding: .5rem ;
+      padding: .5rem;
       font: var(--body-sm);
     }
 
@@ -31,32 +27,23 @@
       margin-inline: .25rem;
       margin-top: .25rem;
       max-width: 100%;
-      width: auto; 
+      width: auto;
       aspect-ratio: 16/9;
       object-fit: cover;
       border-radius: .25rem;
     }
-
-
-
   }
-
   & input[type="radio"] {
     appearance: none;
     position: absolute;
   }
-
-
-
-
 }
 
 
 .theme-card:hover,
 .theme-card:focus-within {
-  
-  background-color:var(--input-stroke);
-  }
+  background-color: var(--input-stroke);
+}
 
 
 .theme-card:has(:checked) {
@@ -64,12 +51,12 @@
 }
 
 legend {
-    color: var(--text-heading);
-    font: var(--body-sm);
-  }
+  color: var(--text-heading);
+  font: var(--body-sm);
+}
 
-  .theme-wrapper {
-    & legend {
-      margin-bottom: 1rem;
-    }
+.theme-wrapper {
+  & legend {
+    margin-bottom: 1rem;
   }
+}

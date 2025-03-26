@@ -1,5 +1,18 @@
 .savebtn {
-  width: 1rem;
-  height: 1rem;
-  background-color: green;
+  display: flex;
+  justify-content: end;
+
+  & button {
+    display: inline-flex;
+    border: none;
+    background-color: var(--brand-dark);
+    text-align: center;
+    align-items: center;
+    gap: .75rem;
+    padding: 1.25rem .8rem;
+    border-radius: .5rem;
+
+    color: var(--text-heading);
+    font: 600 1rem var(--open-sans);
+  }
 }

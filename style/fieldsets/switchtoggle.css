@@ -1,12 +1,9 @@
 .input-toggle {
   color: var(--text-heading);
   font: var(--body-sm);
-
-
   & legend {
     margin-bottom: 1.25rem;
   }
-
 }
 
 .switch-toggle {
@@ -14,8 +11,6 @@
   align-items: center;
   gap: .75rem;
   display: flex;
-
-
 }
 
 
@@ -24,6 +19,7 @@
 #toggle {
   display: none;
 }
+
 .switch {
   padding: .2rem;
   position: relative;
@@ -47,17 +43,15 @@
   transition: all .5s ease-in-out;
 }
 
-#toggle:checked ~ .switch {
+#toggle:checked~.switch {
   background-color: var(--brand-light);
-  
-}
-#toggle:checked ~ .slider {
-  background-color: white;
-  
 }
 
-#toggle:checked ~ .switch .slider {
+#toggle:checked~.slider {
+  background-color: white;
+}
+
+#toggle:checked~.switch .slider {
   background-color: white;
   transform: translateX(31px);
-  
 }

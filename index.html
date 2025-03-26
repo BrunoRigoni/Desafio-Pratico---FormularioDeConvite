@@ -20,12 +20,9 @@
 
 <body>
   <div id="app">
-
     <aside>
-
       <div class="aside-container">
         <img src="./assets/images/aside/Logo.svg" alt="Icone festivo">
-
         <header>
           <h2 class="logo">
             Festivite
@@ -35,20 +32,16 @@
           </p>
         </header>
       </div>
-
-
     </aside>
 
     <main>
-
       <h1>Crie seu convite</h1>
 
       <form method="post" enctype="multipart/form-data">
 
-
         <fieldset class="main-field">
           <div class="title">
-            <img src="./assets/images/icons/calendar.svg" alt="">
+            <img src="./assets/images/icons/calendar.svg" alt="Icone de calendário indicando programação de um evento">
             Sobre o evento
           </div>
 
@@ -70,8 +63,6 @@
               <input type="datetime-local" value="22-03-2025 22S16:33" name="end-datetime-local"
                 id="end-datetime-local">
             </div>
-
-
 
             <div class="radio-wrapper">
 
@@ -107,18 +98,13 @@
                   Remoto
                   <input type="radio" value="remote" name="presential-remote" id="remote">
                 </label>
-
               </div>
-
-
-
             </div>
 
             <div class="input-wrapper">
               <label for="locate">Local</label>
               <input type="url" name="locate" id="locate" placeholder="Link ou endereço">
             </div>
-
           </div>
 
           <div class="text-wrapper">
@@ -128,19 +114,18 @@
           </div>
         </fieldset>
 
-
         <fieldset class="second-field">
           <div class="title">
-            <img src="./assets/images/icons/paintbrush-vertical.svg" alt="">
+            <img src="./assets/images/icons/paintbrush-vertical.svg"
+              alt="Icone de pincel indicando a area de Personalização">
             Personalização
           </div>
 
           <div class="input-colors-wrapper">
+
             <legend>Cor principal</legend>
 
-
             <div class="color-inner">
-
               <label class="color-btn" for="blue">
                 <div class="selector blue"></div>
                 <input type="radio" value="blue" name="selec" id="blue">
@@ -277,19 +262,18 @@
 
             <div class="togglemode-file-wrapper">
               <div class="input-toggle">
+
                 <legend>Estilo</legend>
 
                 <div class="switch-toggle">
 
                   <input type="checkbox" name="toggle" id="toggle">
+
                   <label class="switch" for="toggle">
                     <span class="slider"></span>
                   </label>
 
                   <p>Escuro</p>
-
-
-
                 </div>
 
 
@@ -301,7 +285,7 @@
 
                 <label class="upload-inner" for="up-header">
                   <div class="up-btn">
-                    <img src="./assets/images/icons/upload-icon.svg" alt="">
+                    <img src="./assets/images/icons/upload-icon.svg" alt="Icone de upload">
                     Selecionar
                   </div>
                   <input type="file" name="up-header" id="up-header" accept="image/png, image/jpeg" required>
@@ -321,7 +305,7 @@
 
         <fieldset class="contacts-field">
           <div class="title">
-            <img src="./assets/images/icons/contact.svg" alt="">
+            <img src="./assets/images/icons/contact.svg" alt="icone card de contato">
             Dados para contato
           </div>
 
@@ -329,7 +313,7 @@
             <label for="contact-name">Nome</label>
             <input class="contact-input" type="text" id="contact-name" name="contact-name" placeholder="Nome completo"
               required>
-            <div class="error"><img src="./assets/images/icons/error.svg" alt="">
+            <div class="error"><img src="./assets/images/icons/error.svg" alt="Erro indicando campo obrigatório">
               <span>Campo obrigatório</span>
             </div>
           </div>
@@ -340,7 +324,7 @@
               <label for="contact-email">E-mail</label>
               <input class="contact-input" type="email" id="contact-email" name="contact-email"
                 placeholder="abc@mail.com" required>
-              <div class="error"><img src="./assets/images/icons/error.svg" alt="">
+              <div class="error"><img src="./assets/images/icons/error.svg" alt="Erro indicando campo obrigatório">
                 <span>Campo obrigatório</span>
               </div>
             </div>
@@ -349,8 +333,9 @@
             <div class="input-wrapper">
               <label for="contact-telephone">Telefone</label>
               <input class="contact-input" type="tel" id="contact-telephone" name="contact-telephone"
-                placeholder="+55 (18) 98765-4321" required minlength="18" maxlength="20">
-              <div class="error"><img src="./assets/images/icons/error.svg" alt="">
+                placeholder="(18) 98765-4321" required minlength="11" maxlength="15"
+                pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})">
+              <div class="error"><img src="./assets/images/icons/error.svg" alt="Erro indicando campo obrigatório">
                 <span>Campo obrigatório</span>
               </div>
             </div>
@@ -380,7 +365,7 @@
             </div>
           </div>
 
-          
+
 
           <div class="therms-wrapper">
 
@@ -390,25 +375,25 @@
             <div class="therms-txt">Aceito receber atualizações e promoções por SMS
             </div>
           </div>
+        </fieldset>
+
+        <div class="savebtn">
+          <button type="submit">
+            <img src="./assets/images/icons/ticket.svg" alt="icone simbolizando um convite">
+            Gerar convite
+          </button>
+        </div>
+
+
+      </form>
+
+    </main>
+
+
 
 
 
   </div>
-
-
-
-  </fieldset>
-
-  <div class="savebtn">
-    
-  </div>
-
-  </form>
-
-  </main>
-
-  </div>
-
 
 </body>
 

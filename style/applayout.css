@@ -10,25 +10,22 @@
 aside {
   background-image: url(../assets/images/aside/Background.png);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  overflow:auto;
+  overflow: auto;
   padding: 2rem;
-  display: inline-block;
 
   & img {
-    width: 2.85rem;
-    height: 3rem;
+    min-width: 2.85rem;
+    min-height: 3rem;
   }
 
   & header {
-    
-
     & p {
       font: var(--body-md);
       color: var(--text-heading);
       text-shadow: .05rem .05rem black;
     }
-
   }
 
 
@@ -37,7 +34,7 @@ aside {
 /*main css configs*/
 
 main {
-  padding: 5rem 8.125rem ;
+  padding: 5rem 8.125rem;
   background-color: var(--bg-shape);
   overflow: auto;
 
@@ -47,15 +44,10 @@ main {
 
 
 }
+
 #grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin-block: 1rem;
 }
-
-
-
-
-
-
