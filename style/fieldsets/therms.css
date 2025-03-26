@@ -1,0 +1,30 @@
+.therms-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  & .check-btn {
+      background-image: url(../../assets/images/icons/checkbox-icon.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 1.25rem 1rem;
+    }
+  }
+
+  & input[type="checkbox"] {
+    border: 1px solid white;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 1rem;
+    opacity: 0;
+  }
+
+.check-btn:has(:checked) {  background-image: url(../../assets/images/icons/checkbox-icon-checked.svg);
+
+  & label + input:has(:checked ){
+    background-color: var(--shape-hover);
+}
+
+
+}
+
