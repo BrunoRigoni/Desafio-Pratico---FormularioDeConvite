@@ -1,13 +1,35 @@
+.therms-and-condition {
+  padding-block: 2.5rem 3.25rem;
+}
+
 .therms-wrapper {
   position: relative;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  text-align: center;
+  gap: .25rem;
+
+  & .therms-txt {
+    font: var(--body-sm);
+    color: var(--text-body);
+    margin-left: .75rem;
+    white-space: nowrap;
+
+
+    & strong {
+      color: var(--brand-light);
+      text-decoration: underline;
+    }
+  }
 
   & .check-btn {
       background-image: url(../../assets/images/icons/checkbox-icon.svg);
       background-repeat: no-repeat;
-      background-size: contain;
-      background-size: 1.25rem 1rem;
+      background-size: 1.25rem 1.25rem;
+      background-position:center;
+      padding: auto;
+      
     }
   }
 
